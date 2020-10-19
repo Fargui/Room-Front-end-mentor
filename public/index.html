@@ -1,21 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Room homepage</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-  <link rel="stylesheet" href="./assets/sass/style.scss">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
 
-  
+
+  <header>
+    <!--  <span class="menu-button" >
+      <img class="cross" src="./images/icon-close.svg" alt="un triangle aux trois côtés égaux" />
+    </span> -->
+
+    <span>
+      <img class="menu-button" src="./images/icon-hamburger.svg" alt="un triangle aux trois côtés égaux" />
+    </span>
+    <h1 class="title-room">room</h1>
+    <nav class="nav">
+      <ul>
+        <li> <a href="#">home</a></li>
+        <li> <a href="#">shop</a></li>
+        <li> <a href="#">about</a></li>
+        <li> <a href="#">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <main class="main">
+    <div class="filter"></div>
+    <article class="first-article">
+      <div class="carroussel">
+        <div class="direction">
+          <div class="dir-left">
+            <span><i class="fas fa-chevron-left"></i></span>
+          </div>
+          <div class="dir-right">
+            <span><i class="fas fa-chevron-right"></i></span>
+          </div>
+        </div>
+      </div>
+      <div class="first-text-container">
+        <div class="first-text">
+          <h2>Discover innovate ways to decorate</h2>
+          <p>We provide Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, omnis perspiciatis alias
+            officia dignissimos molestiae ad illo veniam est tempore quo, iusto repellat quod id ea beatae, vel quis
+            natus?</p>
+        </div>
+        <div class="shop-now-container">
+          <span>SHOP NOW
+            <img src="./images/icon-arrow.svg" alt="un triangle aux trois côtés égaux" />
+          </span>
+        </div>
+
+      </div>
+    </article>
+
+
+    <article class="second-article">
+      <div class="image-second-article"></div>
+      <div class="second-text-container">
+        <div class="first-text">
+          <h2>Discover innovate ways to decorate</h2>
+          <p>We provide Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, omnis perspiciatis alias
+            officia dignissimos molestiae ad illo veniam est tempore quo, iusto repellat quod id ea beatae, vel quis
+            natus?</p>
+        </div>
+      </div>
+    </article>
+    <div class="last-image"></div>
+  </main>
+
 </body>
 
 <script src="./assets/js/app.js"></script>
+
 </html>
