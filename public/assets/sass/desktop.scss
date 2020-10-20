@@ -1,0 +1,161 @@
+@import './mobile.scss';
+
+
+
+@media screen and (min-width: 1000px) {
+
+
+    .menu-button,
+    .title-room,
+    #carroussel .direction {
+        display: none;
+    }
+
+    header {
+        width: 926px;
+
+        .nav {
+            display: none;
+        }
+
+        .nav-desktop {
+            display: initial;
+            width: inherit;
+
+            ul {
+                width: inherit;
+                display: flex;
+                justify-content: start;
+                list-style: none;
+                align-items: center;
+                padding-left: 5em;
+                padding-top: 2em;
+                color: white;
+
+
+                li {
+                    margin-right: 4em;
+
+                    h1 {
+                        font-size: 25px;
+                        margin-right: 1em;
+                    }
+
+                    a {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .first-article {
+        display: flex;
+
+        .carroussel {
+            height: 100%;
+            width: initial;
+
+            img {
+                width: initial; //Clear mobile
+                height: 100%;
+            }
+
+
+
+        }
+
+
+        .first-text-container {
+            position: relative;
+            width: 42%;
+
+            .first-text {
+                position: absolute;
+                top: 42%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                padding: 0 7em;
+            }
+
+            h2 {
+                font-size: 42px;
+                font-weight: 600;
+                line-height: 1;
+            }
+
+            p {
+                font-size: 12px;
+                padding-top: 2em;
+            }
+
+            .direction-desktop {
+                width: 180px;
+                height: 90px;
+                background-color: black;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                display: flex;
+
+                .dir-left,
+                .dir-right {
+                    width: 50%;
+                    position: relative;
+
+
+                    img {
+                        color: white;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 16px;
+                    }
+
+                }
+            }
+        }
+
+    }
+
+    .second-article {
+        display: flex;
+        height: 100%;
+
+
+        .image-second-article {
+            height: inherit;
+
+            img {
+                width: initial;
+                height: inherit;
+            }
+        }
+
+        .second-text-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5em 3em;
+
+        }
+
+        .last-image-container {
+
+            height: inherit;
+            width: auto;
+
+            img {
+                height: inherit;
+            }
+        }
+    }
+}

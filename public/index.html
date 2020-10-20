@@ -15,7 +15,7 @@
     integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/desktop.css">
 </head>
 
 <body>
@@ -38,6 +38,16 @@
         <li> <a href="#">contact</a></li>
       </ul>
     </nav>
+
+    <nav class="nav-desktop">
+      <ul>
+        <h1 class="title-room">room</h1>
+        <li> <a href="#">home</a></li>
+        <li> <a href="#">shop</a></li>
+        <li> <a href="#">about</a></li>
+        <li> <a href="#">contact</a></li>
+      </ul>
+    </nav>
   </header>
 
 
@@ -45,13 +55,19 @@
   <main class="main">
     <div class="filter"></div>
     <article class="first-article">
-      <div class="carroussel">
+      <div id="carroussel" class="carroussel">
+        <picture>
+          <source media="(max-width : 799px)" srcset="./images/mobile-image-hero-1.jpg">
+          <source media="(max-width : 2000px)" srcset="./images/desktop-image-hero-1.jpg">
+          <img src="./images/mobile-image-hero-1.jpg" alt="dir left" />
+        </picture>
+
         <div class="direction">
           <div class="dir-left">
-            <span><i class="fas fa-chevron-left"></i></span>
+            <img src="./images/icon-angle-left.svg" alt="dir left" />
           </div>
           <div class="dir-right">
-            <span><i class="fas fa-chevron-right"></i></span>
+            <img src="./images/icon-angle-right.svg" alt="dir right" />
           </div>
         </div>
       </div>
@@ -61,29 +77,46 @@
           <p>We provide Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, omnis perspiciatis alias
             officia dignissimos molestiae ad illo veniam est tempore quo, iusto repellat quod id ea beatae, vel quis
             natus?</p>
+
+          <div class="shop-now-container">
+            <span>SHOP NOW
+              <img src="./images/icon-arrow.svg" alt="un triangle aux trois côtés égaux" />
+            </span>
+          </div>
         </div>
-        <div class="shop-now-container">
-          <span>SHOP NOW
-            <img src="./images/icon-arrow.svg" alt="un triangle aux trois côtés égaux" />
-          </span>
+
+        <div class="direction-desktop">
+          <div class="dir-left">
+            <img src="./images/icon-angle-left.svg" alt="dir left" />
+          </div>
+          <div class="dir-right">
+            <img src="./images/icon-angle-right.svg" alt="dir right" />
+          </div>
         </div>
+      </div>
 
       </div>
     </article>
 
 
     <article class="second-article">
-      <div class="image-second-article"></div>
+      <div class="image-second-article">
+        <img src="./images/image-about-dark.jpg" alt="dir left" />
+      </div>
       <div class="second-text-container">
-        <div class="first-text">
-          <h2>Discover innovate ways to decorate</h2>
-          <p>We provide Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, omnis perspiciatis alias
-            officia dignissimos molestiae ad illo veniam est tempore quo, iusto repellat quod id ea beatae, vel quis
-            natus?</p>
+        <div class="second-text">
+          <h3>ABOUT OUR FURNITURE</h3>
+          <p>Our multifunctionel collection blends design and function to suit your individual taste. Make each room
+            unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture
+            pieces you need, from traditional to contemporary styles or anything in between. Product speciallists are
+            available to help you create your dream space.</p>
         </div>
       </div>
+      <div class="last-image-container">
+        <img src="./images/image-about-light.jpg" alt="dir left" />
+      </div>
     </article>
-    <div class="last-image"></div>
+
   </main>
 
 </body>
