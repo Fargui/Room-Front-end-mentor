@@ -10,7 +10,7 @@ let isVisible = false
 /* body.ready */ //doc ready like JQ
 
 
-if (window.matchMedia("(max-width: 768px)").matches) {
+if (window.matchMedia("(max-width: 1200px)").matches) {
     nav.style.display = "none"
 
     menuButton.addEventListener('click', ()=>{
@@ -30,6 +30,10 @@ if (window.matchMedia("(max-width: 768px)").matches) {
     })
   }
 
+
+
+const prev = document.querySelector('.dir-left');
+const next = document.querySelector('.dir-right');
 
 
 

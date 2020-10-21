@@ -63,7 +63,7 @@
             width: initial;
 
             img {
-                width: initial; //Clear mobile
+                width: 63vw; //Clear mobile
                 height: 100%;
             }
 
@@ -142,6 +142,7 @@
 
         .second-text-container {
             display: flex;
+            flex: 1;
             justify-content: center;
             align-items: center;
             padding: 5em 3em;
@@ -152,6 +153,7 @@
 
             height: inherit;
             width: auto;
+            
 
             img {
                 height: inherit;

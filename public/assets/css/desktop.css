@@ -157,7 +157,7 @@ header {
       height: 100%;
       width: initial; }
       .first-article .carroussel img {
-        width: initial;
+        width: 63vw;
         height: 100%; }
     .first-article .first-text-container {
       position: relative;
@@ -207,6 +207,7 @@ header {
         height: inherit; }
     .second-article .second-text-container {
       display: flex;
+      flex: 1;
       justify-content: center;
       align-items: center;
       padding: 5em 3em; }
